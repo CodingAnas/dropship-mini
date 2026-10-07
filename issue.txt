@@ -1,0 +1,69 @@
+Cannot use doctrine/mongodb-odm-bundle's latest version 5.6.0 as it requires ext-mongodb ^1.21 || ^2 which is missing from your platform.
+./composer.json has been updated
+Running composer update doctrine/mongodb-odm-bundle symfony/form symfony/validator symfony/messenger symfony/twig-bundle
+Loading composer repositories with package information
+Restricting packages listed in "symfony/symfony" to "7.4.*"
+Updating dependencies
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires doctrine/mongodb-odm-bundle * -> satisfiable by doctrine/mongodb-odm-bundle[3.0.1, ..., 3.6.2, 4.0.0, ..., 4.7.0, 5.0.0, ..., 5.6.0].
+    - doctrine/mongodb-odm-bundle[3.0.1, ..., 3.0.2] require symfony/options-resolver ~2.1 -> found symfony/options-resolver[v2.1.0, ..., v2.8.52] but these were not loaded, likely because it conflicts with another require.
+    - doctrine/mongodb-odm-bundle 3.1.0 requires php ^5.5 || ^7.0 -> your php version (8.5.11) does not satisfy that requirement.
+    - doctrine/mongodb-odm-bundle[3.2.0, ..., 3.6.2] require php ^5.6 || ^7.0 -> your php version (8.5.11) does not satisfy that requirement.
+    - doctrine/mongodb-odm-bundle[4.0.0, ..., 4.2.2] require php ^7.2 -> your php version (8.5.11) does not satisfy that requirement.
+    - doctrine/mongodb-odm-bundle[4.3.0, ..., 4.3.1] require psr/log ^1.0 -> found psr/log[1.0.0, ..., 1.1.4] but the package is fixed to 3.0.2 (lock file version) by a partial update and that version does not match. Make sure you list it as an argument for the update command.
+    - doctrine/mongodb-odm-bundle[4.4.0, ..., 4.7.0, 5.0.0, ..., 5.0.1] require ext-mongodb ^1.5 -> it is missing from your system. Install or enable PHP's mongodb extension.
+
+      Alternatively you can require one of these packages that provide the extension (or parts of it):
+      Keep in mind that the suggestions are automated and may not be valid or safe to use
+      - soyuka/stubs-mongodb ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - mongodb/mongodb-extension MongoDB driver extension
+      - dyncep/php-mongodb-stubs MongoDB PHP extension stubs for IDE autocompletion and type hinting
+      - gepur-it/report-bundle Gepur ERP Report generation bundle
+      - malith124/stubs-mongodb-11 ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - svk/yc-mongodb-injector Интеграция драйвера mongodb для php 7.4.4 в Cloud Functions Яндекс.Об?
+
+    - doctrine/mongodb-odm-bundle[5.0.2, ..., 5.2.1] require ext-mongodb ^1.16 -> it is missing from your system. Install or enable PHP's mongodb extension.
+
+      Alternatively you can require one of these packages that provide the extension (or parts of it):
+      Keep in mind that the suggestions are automated and may not be valid or safe to use
+      - soyuka/stubs-mongodb ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - mongodb/mongodb-extension MongoDB driver extension
+      - dyncep/php-mongodb-stubs MongoDB PHP extension stubs for IDE autocompletion and type hinting
+      - gepur-it/report-bundle Gepur ERP Report generation bundle
+      - malith124/stubs-mongodb-11 ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - svk/yc-mongodb-injector Интеграция драйвера mongodb для php 7.4.4 в Cloud Functions Яндекс.Об?
+
+    - doctrine/mongodb-odm-bundle[5.3.0, ..., 5.3.1] require ext-mongodb ^1.16 || ^2 -> it is missing from your system. Install or enable PHP's mongodb extension.
+
+      Alternatively you can require one of these packages that provide the extension (or parts of it):
+      Keep in mind that the suggestions are automated and may not be valid or safe to use
+      - soyuka/stubs-mongodb ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - mongodb/mongodb-extension MongoDB driver extension
+      - dyncep/php-mongodb-stubs MongoDB PHP extension stubs for IDE autocompletion and type hinting
+      - gepur-it/report-bundle Gepur ERP Report generation bundle
+      - malith124/stubs-mongodb-11 ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - svk/yc-mongodb-injector Интеграция драйвера mongodb для php 7.4.4 в Cloud Functions Яндекс.Об?
+
+    - doctrine/mongodb-odm-bundle[5.4.0, ..., 5.6.0] require ext-mongodb ^1.21 || ^2 -> it is missing from your system. Install or enable PHP's mongodb extension.
+
+      Alternatively you can require one of these packages that provide the extension (or parts of it):
+      Keep in mind that the suggestions are automated and may not be valid or safe to use
+      - soyuka/stubs-mongodb ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - mongodb/mongodb-extension MongoDB driver extension
+      - dyncep/php-mongodb-stubs MongoDB PHP extension stubs for IDE autocompletion and type hinting
+      - gepur-it/report-bundle Gepur ERP Report generation bundle
+      - malith124/stubs-mongodb-11 ext-mongodb stubs taken from https://github.com/JetBrains/phpstorm-stubs
+      - svk/yc-mongodb-injector Интеграция драйвера mongodb для php 7.4.4 в Cloud Functions Яндекс.Об?
+
+
+To enable extensions, verify that they are enabled in your .ini files:
+    - /opt/homebrew/etc/php/8.5/php.ini
+You can also run `php --ini` in a terminal to see which files are used by PHP in CLI mode.
+Alternatively, you can run Composer with `--ignore-platform-req=ext-mongodb` to temporarily ignore these required extensions.
+
+Use the option --with-all-dependencies (-W) to allow upgrades, downgrades and removals for packages currently locked to specific versions.
+You can also try re-running composer require with an explicit version constraint, e.g. "composer require doctrine/mongodb-odm-bundle:*" to figure out if any version is installable, or "composer require doctrine/mongodb-odm-bundle:^2.1" if you know which you need.
+
+Installation failed, reverting ./composer.json and ./composer.lock to their original content.
